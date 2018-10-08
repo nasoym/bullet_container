@@ -20,7 +20,9 @@ RUN python3 setup.py install
 # Install C++ API
 RUN mkdir /bullet3/cmake_build && cd /bullet3/cmake_build && cmake .. && make -j8 && make install
 
-RUN apt install -y vim ipython3
+RUN apt install -y vim 
+
+RUN pip3 install influxdb ipython
 
 COPY ./examples /pybullet_examples
 
