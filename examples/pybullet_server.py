@@ -1,5 +1,6 @@
 import pybullet
 import pybullet_data
+import websockets
 
 from influxdb import InfluxDBClient
 

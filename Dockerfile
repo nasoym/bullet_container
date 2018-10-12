@@ -22,7 +22,7 @@ RUN mkdir /bullet3/cmake_build && cd /bullet3/cmake_build && cmake .. && make -j
 
 RUN apt install -y vim 
 
-RUN pip3 install influxdb ipython
+RUN pip3 install influxdb ipython websockets
 
 COPY ./examples /pybullet_examples
 

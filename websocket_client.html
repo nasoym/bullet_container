@@ -1,0 +1,19 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+<div>
+</div>
+</body>
+<script type="application/javascript">
+  document.onreadystatechange = function () {
+    if (document.readyState === "complete") {
+      var ws = new WebSocket('ws://localhost:8765');
+      ws.addEventListener('message', function (event) {
+          console.log('Message from server ', event.data);
+      });
+    }
+  };
+</script>
+</html>

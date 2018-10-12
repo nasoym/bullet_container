@@ -6,6 +6,8 @@ services:
     volumes:
       - ./examples:/pybullet_examples
     tty: true
+    ports:
+      - 8765:8765
     command: python3 /pybullet_examples/pybullet_server.py
 
   influxdb:
