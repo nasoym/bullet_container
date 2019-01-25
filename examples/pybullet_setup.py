@@ -1,7 +1,7 @@
 import pybullet
 import pybullet_data
 
-from influxdb import InfluxDBClient
+# from influxdb import InfluxDBClient
 
 pybullet.connect(pybullet.DIRECT)
 pybullet.resetSimulation()
@@ -15,5 +15,5 @@ influxclient.create_database('points')
 
 pybullet.stepSimulation()
 print(pybullet.getBasePositionAndOrientation(sphere))
-influxclient.write_points([{"measurement":"foo","tags":{"id":"123"},"fields":{"x":4,"y":5}}],database="points")
+# influxclient.write_points([{"measurement":"foo","tags":{"id":"123"},"fields":{"x":4,"y":5}}],database="points")
 
