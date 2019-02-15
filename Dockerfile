@@ -15,6 +15,7 @@ RUN apt update && apt install -y git cmake ffmpeg pkg-config qtbase5-dev libqt5o
 
 # Install pybullet
 RUN git clone https://github.com/bulletphysics/bullet3 /bullet3
+COPY ./pybullet.c /bullet3/examples/pybullet/pybullet.c
 RUN python3 setup.py install
 
 # Install C++ API
