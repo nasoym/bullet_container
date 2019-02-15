@@ -18,7 +18,7 @@ RUN git clone https://github.com/bulletphysics/bullet3 /bullet3
 RUN python3 setup.py install
 
 # Install C++ API
-RUN mkdir /bullet3/cmake_build && cd /bullet3/cmake_build && cmake .. && make -j8 && make install
+#RUN mkdir /bullet3/cmake_build && cd /bullet3/cmake_build && cmake .. && make -j8 && make install
 
 RUN apt install -y vim 
 
