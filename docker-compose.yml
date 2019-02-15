@@ -10,9 +10,3 @@ services:
       - 8765:8765
     command: python3 /pybullet_examples/pybullet_server.py
 
-  influxdb:
-    image: influxdb:1.6.3-alpine
-    ports:
-      - 8083:8083 
-      - 8086:8086
-        
