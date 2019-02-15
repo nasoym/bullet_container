@@ -3288,21 +3288,6 @@ static PyObject* pybullet_getBaseVelocity(PyObject* self,
 
 static PyObject* pybullet_getFoo(PyObject* self, PyObject* args, PyObject* keywds)
 {
-	int physicsClientId = 0;
-	b3PhysicsClientHandle sm = 0;
-
-	static char* kwlist[] = {"physicsClientId", NULL};
-	if (!PyArg_ParseTupleAndKeywords(args, keywds, "|i", kwlist, &physicsClientId))
-	{
-		return NULL;
-	}
-	sm = getPhysicsClient(physicsClientId);
-	if (sm == 0)
-	{
-		PyErr_SetString(SpamError, "Not connected to physics server.");
-		return NULL;
-	}
-
 	{
     int foo = 404;
 
