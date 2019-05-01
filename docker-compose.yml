@@ -10,3 +10,11 @@ services:
       - 8765:8765
     command: python3 /pybullet_examples/pybullet_server.py
 
+  rabbit:
+    image: activiti/rabbitmq-stomp
+    ports:
+      - 5672:5672 
+      - 15672:15672
+      - 15674:15674 
+
+
