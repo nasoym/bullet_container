@@ -18,5 +18,3 @@ RUN apt install -y vim
 
 RUN pip3 install ipython pika
 
-COPY ./examples /pybullet_examples
-
