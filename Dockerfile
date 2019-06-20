@@ -1,6 +1,6 @@
 # ARG cuda_version=9.1-devel
 # FROM nvidia/cudagl:${cuda_version}
-FROM ubuntu:18.04
+FROM ubuntu:19.04
 
 # https://hub.docker.com/r/nvidia/cudagl/
 
